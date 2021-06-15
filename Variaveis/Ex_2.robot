@@ -16,4 +16,3 @@ vetor de frutas
     Log To Console    ${frutas}[2]
     Log To Console    ${frutas}[3]
     Log To Console    ${frutas}[4]
-    
