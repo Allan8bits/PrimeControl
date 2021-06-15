@@ -14,3 +14,4 @@ Logar no meu terminal as caracteristicas
     Log To Console    ${\n}
     Log To Console    ${PESSOA.nome} ${PESSOA.sobrenome}, tenho ${PESSOA.idade} anos, ${PESSOA.peso}, ${PESSOA.altura} de altura e curso ${PESSOA.curso}.
     Log To Console    ${\n}
+    
