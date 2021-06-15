@@ -8,6 +8,8 @@ ${MENSAGEM}    Hello World!!
 Meu teste de impressão de terminal
     Logar no meu terminal uma mensagem
 
+
+
 *** Keywords ***
 Logar no meu terminal uma mensagem
     Log To Console    ${MENSAGEM}
