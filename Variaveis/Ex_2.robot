@@ -12,6 +12,6 @@ Lista de frutas
 *** Keywords ***
 vetor de frutas
     FOR    ${i}    IN RANGE    ${frutas}
-        Log To Console    ${frutas}[${i}]
+        Log To Console    ${frutas}[${i}]    
         
     END
