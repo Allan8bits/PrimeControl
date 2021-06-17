@@ -7,4 +7,8 @@ Comando Git
 - Set Test Variable = faz com que todas as KWs do teste enxerguem a variável!
 - Set Suite Variable = faz com que todas os testes da suíte enxerguem a variável!
 - Set Global Variable = faz com que todas suítes da execução enxerguem a variável!
+-     Sleep == Pausa no navegador por segundos
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!! AINDA ESTOU FINALIZANDO MEUS TESTES !!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
