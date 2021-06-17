@@ -6,9 +6,10 @@ Suite Setup      Abrir o navegador
 
 *** Variables ***
 ${URL}          http://automationpractice.com
-${NOME}         Allan
-${sobrenome}    Rodrigo
+&{NOME}         nome=Allan    sobrenome=Rodrigo
 ${senha}        123456789
+&{number}       phone=41987469266    home=32275225
+${info.add}     dasihudhausihdaisa
 
 *** Test Cases ***
 Caso de Teste 01: Pesquisar produto existente e adicioná-lo no carrinho
