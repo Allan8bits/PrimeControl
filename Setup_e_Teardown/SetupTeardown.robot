@@ -29,5 +29,5 @@ KW para no teardown da Suite
 KW para no teardown de cada teste
     Log To Console    Essa kw foi executada ao final de cada teste
 email completo
-    [Arguments]    ${nome}    ${sobrenome}    ${idade}
-    [Return]    ${nome}_${sobrenome}_${idade}@robot.com
+    [Arguments]    ${a}    ${sobrenome}    ${idade}
+    [Return]    ${a}_${sobrenome}_${idade}@robot.com
