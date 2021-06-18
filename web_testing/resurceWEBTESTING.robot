@@ -41,6 +41,7 @@ Conferir se o produto "${PRODUTO}" foi adicionado no carrinho
     Wait Until Element Is Visible    xpath=(//a[contains(.,'${PRODUTO}')])[4]
 # CASO DE TESTE 02---------------------------------------------------------------------------
 Conferir mensagem
+    Sleep    2s
     Wait Until Element Is Visible    xpath=(//font[contains(.,'Não foram encontrados resultados para a sua pesquisa 'ItemNãoExistente')])[2]
 
 # CASO DE TESTE 03---------------------------------------------------------------------------------------------------
@@ -86,12 +87,17 @@ Preencher os dados obrigatórios
     Input Password                   id=passwd    ${senha}
 
     # data de aniversário
-    Select From List By Label    locator
+    Select From List By Index        id=days      ${nascimento.dia}
+    Select From List By value        id=months    ${nascimento.mes}
+    Select From List By value        id=years     ${nascimento.ano}
+
 
     # company
     Input Text                       id=company    PrimeExperts 
 
     # Scroll para baixa para uma melhor visão dos itens
+    Sleep                            2s    
+    Scroll Element Into View         xpath=//label[@for='phone_mobile']
     Scroll Element Into View         id=phone_mobile
 
     # ADRESS
@@ -104,11 +110,14 @@ Preencher os dados obrigatórios
     Input Text                       id=city    Paris
 
     # state
-    Input Text                       id=other    ${info.add}
+    Select From List By Label        id=id_state    ${state}
 
     # postal code
     Input Text                       id=postcode    75008
     
+    # info addicional
+    Input Text                       id=other    ${info.add}
+
     # home number
     Input Text                       id=phone    ${number.home}
 
@@ -123,6 +132,10 @@ Preencher os dados obrigatórios
 
 
 Submeter cadastro
+    Wait Until Element Is Visible    xpath=//h4[contains(.,'Newsletter')]
+    Click Element                    xpath=//span[contains(.,'Register')]
+
 Conferir se o cadastro foi efetuado com sucesso
+    Wait Until Element Is Visible    xpath=//p[@class='info-account']
     
     

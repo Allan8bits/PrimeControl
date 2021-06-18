@@ -10,6 +10,8 @@ ${URL}          http://automationpractice.com
 ${senha}        123456789
 &{number}       phone=41987469266    home=32275225
 ${info.add}     dasihudhausihdaisa
+&{nascimento}   dia=22    mes=9    ano=2003
+${state}        Alabama
 
 *** Test Cases ***
 Caso de Teste 01: Pesquisar produto existente e adicioná-lo no carrinho
